@@ -1,0 +1,26 @@
+<%- include("_header") -%>
+
+  <div class="container" style="padding: 0 500px;">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1>Update a record</h1>
+      </div>
+      <div class="col-12">
+        <form action="/edit/<%= model.id %>" method="post">
+          <div class="form-horizontal">
+
+            <%- include("_editor") -%>
+
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <input type="submit" value="Update" class="btn btn-default btn-warning" />
+                <a class="btn btn-secondary cancel" href="/users">Cancel</a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<%- include("_footer") -%>

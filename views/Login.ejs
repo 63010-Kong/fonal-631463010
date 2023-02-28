@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in</title>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- bootstrap@5.3.0-alpha1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Sarabun -->
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <style>
+    body{
+        background-image: url(https://i.pinimg.com/originals/5f/6e/5f/5f6e5f70945d4c615e55c4ee5ab921ac.gif);
+    }
+  </style>
+</head>
+<body class="hold-transition login-page">
+    <div class="Auth-form-container-loin">
+        <form method="get" action="/index" id="login" class="Auth-form-login">
+            <div class="text-title text-center pb-2">
+                <h1><strong>Log in</strong></h1>
+            </div>
+            <div class="Auth-form-content">
+                <div class="text-center mt-1 mb-3">
+                    <h2><strong><span class='text-danger '>Web</span>-Chet</strong></h2>
+                </div>
+                <div class="form-group mt-1">
+                    <label>Username</label>
+                    <input type="text" class="form-control mt-1" name="username" placeholder="username"/>
+                </div>
+                <div class="form-group mt-3">
+                    <label>Password</label>
+                    <input type="password" class="form-control mt-1" name="password" placeholder="Password"/>
+                </div>
+                <div class="d-grid gap-2 mt-4 text-center">
+                    <button type="submit" class="btn btn-primary" name="submit" >Log in</button>
+                    <p>Create your<a href="/register"> <b>Account</b></a></p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="dist/js/adminlte.min.js"></script>
+</body>
